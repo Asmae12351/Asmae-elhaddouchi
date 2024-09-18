@@ -1,0 +1,198 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Meta tags nécessaires -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Liens pour les polices et les feuilles de styles -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
+
+
+    <title>Asmae El Haddouchi Portfolio</title>
+  </head>
+  <style>
+    /* Style général pour le header */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #333;
+  color: white;
+  position: relative;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.logo span {
+  color: #b7937a; /* Couleur personnalisée */
+}
+
+.navbar {
+  display: flex;
+  gap: 20px;
+}
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+  padding: 5px 10px;
+  transition: color 0.3s;
+}
+
+.navbar a:hover {
+  color: #b7937a; /* Couleur au survol */
+}
+
+.active {
+  border-bottom: 2px solid #b7937a; /* Indication de lien actif */
+}
+
+/* Menu mobile */
+.menu-toggle {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    display: none;
+  }
+
+  .menu-toggle {
+    display: inline-block;
+    cursor: pointer;
+  }
+
+  .iconClose {
+    display: none;
+  }
+
+  .site-mobile-menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #333;
+    z-index: 99;
+    display: none;
+  }
+
+  .site-mobile-menu.show {
+    display: block;
+  }
+
+  .site-mobile-menu-body {
+    padding: 100px 20px;
+  }
+
+  .site-mobile-menu-body a {
+    display: block;
+    color: white;
+    font-size: 20px;
+    margin-bottom: 15px;
+    text-decoration: none;
+  }
+
+  .site-mobile-menu-body a:hover {
+    color: #b7937a;
+  }
+
+  .iconClose {
+    display: block;
+    font-size: 30px;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    color: white;
+    cursor: pointer;
+  }
+}
+
+/* Hero section */
+.hero {
+  width: 100%;
+  height: 400px;
+  background-size: cover;
+  background-position: center;
+}
+
+  </style>
+  <body>
+    <!-- Menu mobile -->
+    <div class="site-mobile-menu site-navbar-target">
+      <div class="site-mobile-menu-header">
+        <div class="site-mobile-menu-close mt-3">
+          <span class="icon-close2 js-menu-toggle"></span>
+        </div>
+      </div>
+      <div class="site-mobile-menu-body"></div>
+    </div>
+
+    <!-- Header avec navigation -->
+    <header class="site-navbar py-4" role="banner">
+      <div class="container">
+        <div class="row align-items-center position-relative">
+          <div class="col-3">
+            <div class="site-logo">
+              <a href="#home" class="font-weight-bold text-white">ASMAE <span>EL HADDOUCHI</span></a>
+            </div>
+          </div>
+          <div class="col-9 text-right">
+            <span class="d-inline-block d-lg-block">
+              <a href="#" class="text-black site-menu-toggle js-menu-toggle py-5">
+                <span class="icon-menu h3 text-white"></span>
+              </a>
+            </span>
+            <!-- Menu de navigation -->
+            <nav class="site-navigation text-right ml-auto d-none d-lg-none" role="navigation">
+              <ul class="site-menu main-menu js-clone-nav ml-auto">
+                <li class="active"><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#education" class="nav-link">Education</a></li>
+                <li><a href="#services" class="nav-link">Services</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </header>
+<script>
+    $(document).ready(function() {
+  // Toggle the mobile menu
+  $('.site-menu-toggle').click(function() {
+    $('.site-mobile-menu').toggleClass('show');
+  });
+
+  // Close the mobile menu when the close icon is clicked
+  $('.iconClose').click(function() {
+    $('.site-mobile-menu').removeClass('show');
+  });
+});
+
+</script>
+    <!-- Section hero avec une image de fond -->
+    <div class="hero" style="background-image: url('images/hero_1.jpg');"></div>
+
+    <!-- Scripts JavaScript nécessaires -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.sticky.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
